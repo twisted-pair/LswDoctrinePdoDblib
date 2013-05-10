@@ -31,7 +31,7 @@ In your Symfony2 project, modify your `config.yml` as follows to use the DBlib b
 # Doctrine Configuration
 doctrine:
     dbal:
-        driver_class:   PDODblibBundle\Doctrine\DBAL\Driver\PDODblib\Driver
+        driver_class:   Lsw\DoctrinePdoDblib\Doctrine\DBAL\Driver\PDODblib\Driver
         host:           mssql_freetds
 
 ```
