@@ -1,7 +1,7 @@
 {
     "name": "leaseweb/pdo-dblib-module",
     "type": "symfony-bundle",
-    "description": "Fork of PDO DBlib Bundle for Symfony2",
+    "description": "PDO DBlib Bundle for Symfony2",
     "keywords": ["pdodblib","mssql"],
     "homepage": "http://www.leaseweblabs.com",
     "license": "MIT",
@@ -9,6 +9,10 @@
         {
             "name": "Tyler Rooney",
             "email": "tyler@tylerrooney.ca"
+        },
+        {
+            "name": "Razvan Tudorica",
+            "email": "r.tudorica@leaseweb.com"
         }
     ],
     "minimum-stability": "dev",
