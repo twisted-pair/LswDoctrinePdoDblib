@@ -1,5 +1,5 @@
 {
-    "name": "raztud/pdo-dblib-module",
+    "name": "leaseweb/pdo-dblib-module",
     "type": "symfony-bundle",
     "description": "Fork of PDO DBlib Bundle for Symfony2",
     "keywords": ["pdodblib","mssql"],
