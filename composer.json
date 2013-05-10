@@ -21,7 +21,7 @@
         "doctrine/dbal": ">=2.1.*"
     },
     "autoload": {
-        "psr-0": { "PDODblibBundle": "" }
+        "psr-0": { "Lsw/DoctrinePdoDblib": "" }
     },
-    "target-dir": "."
+    "target-dir": "Lsw/DoctrinePdoDblib"
 }
