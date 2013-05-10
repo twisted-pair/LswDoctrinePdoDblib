@@ -1,4 +1,4 @@
-PDODblibBundle
+LswDoctrinePdoDblib
 --------------
 
 Doctrine 2 does support any method of connecting to SQL Server on a Linux box. Here's a simple driver that supports PDO DBlib. Many tests fail, but most are related to shortcomings of the PDODBlib driver. There is a patch in the PHP repo to add transaction and lastInsertId support, but this package has some minor work arounds.
