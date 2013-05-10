@@ -1,8 +1,8 @@
 {
-    "name": "leaseweb/pdo-dblib-module",
+    "name": "leaseweb/pdo-dblib",
     "type": "library",
-    "description": "Library for PDO DBlib (MSSQL) support in Symfony2",
-    "keywords": ["pdodblib","mssql"],
+    "description": "Library for pdo_dblib (MSSQL) support in Symfony2",
+    "keywords": ["pdo_dblib","pdo","dblib","mssql"],
     "homepage": "http://www.leaseweblabs.com",
     "license": "MIT",
     "authors": [
