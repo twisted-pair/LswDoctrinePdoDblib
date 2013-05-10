@@ -27,5 +27,10 @@
     "autoload": {
         "psr-0": { "Lsw\\DoctrinePdoDblib": "" }
     },
-    "target-dir": "Lsw/DoctrinePdoDblib"
+    "target-dir": "Lsw/DoctrinePdoDblib",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
 }
