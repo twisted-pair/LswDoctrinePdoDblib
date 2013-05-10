@@ -1,8 +1,8 @@
 {
     "name": "leaseweb/pdo-dblib",
     "type": "library",
-    "description": "Library for pdo_dblib (MSSQL) support in Symfony2",
-    "keywords": ["pdo_dblib","pdo","dblib","mssql"],
+    "description": "Library for support of the pdo_dblib (MSSQL) driver in Doctrine",
+    "keywords": ["pdo_dblib","pdo","dblib","mssql","doctrine"],
     "homepage": "http://www.leaseweblabs.com",
     "license": "MIT",
     "authors": [
@@ -18,7 +18,6 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.2",
-        "symfony/framework-bundle": ">=2.1",
     },
     "require-dev": {
         "doctrine/doctrine-bundle": "*"
