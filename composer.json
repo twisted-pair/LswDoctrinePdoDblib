@@ -13,6 +13,10 @@
         {
             "name": "Razvan Tudorica",
             "email": "r.tudorica@leaseweb.com"
+        },
+        {
+            "name": "Maurits van der Schee",
+            "email": "m.vanderschee@leaseweb.com"
         }
     ],
     "minimum-stability": "dev",
