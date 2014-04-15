@@ -37,7 +37,7 @@ class Connection extends \Doctrine\DBAL\Driver\PDOConnection implements \Doctrin
         $val = parent::quote($value, $type);
 
         // Fix for a driver version terminating all values with null byte
-        rtrim($val, "\0");
+        $val = rtrim($val, "\0");
 
         return $val;
     }
