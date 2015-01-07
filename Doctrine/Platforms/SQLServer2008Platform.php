@@ -5,13 +5,26 @@ use Doctrine\DBAL\Platforms\SQLServer2008Platform as SQLServer;
 
 class SQLServer2008Platform extends SQLServer
 {
+    /**
+     * @var string
+     */
+    protected $dateTimeFormatString = 'Y-m-d H:i:s';
   
     /**
-     * {@inheritDoc}
+     * @return string
      */
     public function getDateTimeFormatString()
     {
-        return 'Y-m-d H:i:s';
+        return $this->dateTimeFormatString;
+    }
+    
+    /**
+     * @param string $dateTimeFormatString
+     * @return \Lsw\DoctrinePdoDblib\Doctrine\Platforms\SQLServer2008Platform
+     */
+    public function setDateTimeFormatString($dateTimeFormatString){
+        $this->dateTimeFormatString = $dateTimeFormatString;
+        return $this;
     }
     
     /**
