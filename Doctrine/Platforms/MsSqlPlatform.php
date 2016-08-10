@@ -20,6 +20,7 @@
 
 namespace Lsw\DoctrinePdoDblib\Doctrine\Platforms;
 
+use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Schema\TableDiff;
 use Doctrine\DBAL\DBALException;
 use Doctrine\DBAL\Schema\Index,
