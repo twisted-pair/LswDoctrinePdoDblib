@@ -1,5 +1,5 @@
 LswDoctrinePdoDblib
---------------
+===================
 
 Doctrine 2 does support any method of connecting to SQL Server on a Linux box. Here's a simple driver that supports PDO DBlib. Many tests fail, but most are related to shortcomings of the PDODBlib driver. There is a patch in the PHP repo to add transaction and lastInsertId support, but this package has some minor work arounds.
 
@@ -8,8 +8,7 @@ This bundle requires the following:
 * FreeTDS
 
 FreeTDS configuration
-=====================
-
+---------------------
 DBLib requires FreeTDS. We can't go into detail about configuring FreeTDS, but the connection configured should look something like following:
 
 ```
@@ -23,7 +22,7 @@ DBLib requires FreeTDS. We can't go into detail about configuring FreeTDS, but t
 ```
 
 Setting up bundle in Symfony
-============================
+----------------------------
 
 In your Symfony2 project, modify your `config.yml` as follows to use the DBlib bundle and the server setup under FreeTDS:
 
@@ -44,20 +43,19 @@ $loader->registerNamespaces(array(
 ```
 
 Putting everything together
-===========================
-
+---------------------------
 Getting everything together wasn't easy. You need to complete the following steps, checking each installation is successful by connecting with the appropriate tools:
 
 * Install FreeTDS and configure a server connection 
-    * *Verify* with ./tsql -S mssql_freetds -U yourusername -P yourpassword
+    * *Verify* with `./tsql -S mssql_freetds -U yourusername -P yourpassword`
 * Install the PHP DBLib extension -- verify with PHP script containing 
-    * *Verify* $pdo = new PDO('dblib:host=mssql_freetds;dbname=yourdb', 'yourusername', 'yourpassword');
+    * *Verify* `$pdo = new PDO('dblib:host=mssql_freetds;dbname=yourdb', 'yourusername', 'yourpassword');`
 * Install and configure the PDODblibBundle 
     * *Verify* Some kind of SQL against your database
 
 
 FYI - PHP pdo_dblib patch
-=========================
+-------------------------
 
 You can find a patch for some of the short-comings of pdo_dblib on SVN.
 
@@ -68,7 +66,7 @@ Revision 300647 - lastInsertId
 Revision 300628 - transaction support
 
 FYI - Doctrine Test Suite
-=========================
+-------------------------
 
 Doctrine2's test suite does not allow you to add database drivers on the fly. If you want to test this package, modify `Doctrine/DBAL/Driver/DriverManager::$_driverMap` as follows:
 
@@ -83,7 +81,7 @@ final class DriverManager
 ```
 
 FYI - Generating Entities from database
-=======================================
+---------------------------------------
 
 It's possible, but not easy. Here's what I did:
 
